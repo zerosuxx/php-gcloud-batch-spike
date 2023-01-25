@@ -1,0 +1,10 @@
+{
+    "require": {
+        "google/cloud-pubsub": "^1.39"
+    },
+    "autoload": {
+        "files": [
+            "src/utility.php"
+        ]
+    }
+}

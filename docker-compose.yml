@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    environment:
+      IS_BATCH_DAEMON_RUNNING: 'true'
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: 'php vendor/bin/google-cloud-batch daemon'
+    #ports:
+    #  - '8088:8080'
